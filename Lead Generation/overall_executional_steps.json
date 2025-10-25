@@ -1,0 +1,17 @@
+[
+  {
+    "step": 1,
+    "task_category": "Lead Generation via Apollo.io",
+    "task": "Sign in to 'https://app.apollo.io' using the provided credentials,email:'shrutigautam1999@gmail.com',password:'#Shruti369'.If post email field,if password is not visible click on next button.Apply all the filters, post which start lead extraction."
+  },
+  {
+    "step": 2,
+    "task_category": "Website Research and Analysis",
+    "task": "Visit the company websites listed in the leads. Analyze and summarize key insights such as services, offerings, or target market."
+  },
+  {
+    "step": 3,
+    "task_category": "Personalized Outreach Creation",
+    "task": "Based on the company insights, draft a personalized outreach email including a compelling subject line and tailored message body."
+  }
+]

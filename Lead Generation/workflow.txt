@@ -1,0 +1,84 @@
+┌──────────────────────────────────────────────┐
+│                    START                     │
+└──────────────────────┬───────────────────────┘
+                       │
+                       ▼
+┌──────────────────────────────────────────────┐
+│ STEP 1: Initialize Supervisor                │
+│ - Supervisor is invoked to initiate the      │
+│   workflow execution.                        │
+└──────────────────────┬───────────────────────┘
+                       │
+                       ▼
+┌──────────────────────────────────────────────┐
+│ STEP 2: Apollo Agent Execution               │
+│ - Access Apollo.io platform.                 │
+│ - Apply user-defined filters.                │
+│ - Perform lead search and selection.         │
+│ - Extract top five verified leads.           │
+│ - Update workflow state with lead data.      │
+└──────────────────────┬───────────────────────┘
+                       │
+                       ▼
+┌──────────────────────────────────────────────┐
+│ STEP 3: Supervisor Evaluation (Lead Stage)   │
+│ - Review Apollo Agent output.                │
+│ - Decision:                                  │
+│     • Proceed to Research Agent, or          │
+│     • Re-execute Apollo Agent for refinement.│
+└───────────────┬──────────────┬───────────────┘
+                │              │
+                │              │ Re-execute
+                │              ▼
+                │     ┌────────────────────────┐
+                │     │ Apollo Agent Re-run    │
+                │     └────────────────────────┘
+                │
+                ▼
+┌──────────────────────────────────────────────┐
+│ STEP 4: Research Agent Execution             │
+│ - Visit each company website sequentially.   │
+│ - Analyze company content and services.      │
+│ - Summarize insights relevant to the use case│
+│   (e.g., potential IT/hardware needs).       │
+│ - Update workflow state with summaries.      │
+└──────────────────────┬───────────────────────┘
+                       │
+                       ▼
+┌──────────────────────────────────────────────┐
+│ STEP 5: Supervisor Evaluation (Research Stage)│
+│ - Review Research Agent output.              │
+│ - Decision:                                  │
+│     • Proceed to Outreach Message Generation, │
+│       or                                     │
+│     • Re-execute Research Agent for accuracy.│
+└───────────────┬──────────────┬───────────────┘
+                │              │
+                │              │ Re-execute
+                │              ▼
+                │     ┌────────────────────────┐
+                │     │ Research Agent Re-run  │
+                │     └────────────────────────┘
+                │
+                ▼
+┌──────────────────────────────────────────────┐
+│ STEP 6: Email Generation                     │
+│ - Generate personalized outreach messages    │
+│   for each researched company.               │
+│ - Ensure tone, context, and personalization  │
+│   align with business objectives.            │
+└──────────────────────┬───────────────────────┘
+                       │
+                       ▼
+┌──────────────────────────────────────────────┐
+│ STEP 7: Data Storage                         │
+│ - Store all collected data and generated     │
+│   messages in an Excel file for recordkeeping│
+│   and future reference.                      │
+└──────────────────────┬───────────────────────┘
+                       │
+                       ▼
+┌──────────────────────────────────────────────┐
+│                     END                      │
+│ - Workflow execution successfully completed. │
+└──────────────────────────────────────────────┘
